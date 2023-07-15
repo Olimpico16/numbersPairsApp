@@ -1,6 +1,4 @@
-# Nombre del Proyecto
-
-Descripción breve del proyecto.
+# NumberPairsApp
 
 ## Requisitos previos
 
