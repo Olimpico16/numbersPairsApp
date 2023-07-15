@@ -4,15 +4,12 @@
 
 Asegúrate de tener instalado lo siguiente antes de comenzar con la inicialización del proyecto:
 
-- Node.js (versión X.X.X)
-- npm (versión X.X.X)
+- Node.js (versión 18.13.0)
+- npm (versión 8.19.3)
 
 ## Inicialización del Proyecto
 
 Sigue los pasos a continuación para inicializar el proyecto de Angular:
 
-1. **Clona el repositorio**
-
-   ```bash
-   git clone <URL del repositorio>
-   cd nombre-del-proyecto
+1. **Instalar dependencias**
+  ## npm install
