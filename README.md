@@ -1,9 +1,20 @@
-## Development server
+# Nombre del Proyecto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Descripción breve del proyecto.
 
-## Build
+## Requisitos previos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Asegúrate de tener instalado lo siguiente antes de comenzar con la inicialización del proyecto:
 
+- Node.js (versión X.X.X)
+- npm (versión X.X.X)
 
+## Inicialización del Proyecto
+
+Sigue los pasos a continuación para inicializar el proyecto de Angular:
+
+1. **Clona el repositorio**
+
+   ```bash
+   git clone <URL del repositorio>
+   cd nombre-del-proyecto
