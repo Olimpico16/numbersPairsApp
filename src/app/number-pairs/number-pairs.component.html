@@ -1,0 +1,35 @@
+<div class="d-flex justify-content-center align-items-center vh-100">
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">Numeros Pares</h2>
+      <div class="input-group mb-3">
+        <input type="number" class="form-control" placeholder="Numero" (keyup.enter)="addNumber()" [(ngModel)]="numbersInput" />
+        <div class="input-group-append">
+          <button class="btn btn-outline-primary" (click)="addNumber()">Agregar</button>
+        </div>
+      </div>
+      <div *ngIf="showWarning" class="alert alert-danger">
+        Ingresa solo números enteros o decimales válidos.
+      </div>
+      <div *ngIf="numbersArray.length > 0">
+        <h4>Números agregados:</h4>
+        <ul class="list-group">
+          <li class="list-group-item" *ngFor="let number of numbersArray; let i = index">
+            <div class="d-flex justify-content-between align-items-center">
+              <span>{{ number }}</span>
+              <button class="btn btn-danger btn-sm" (click)="removeNumber(i)">X</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="form-group ">
+        <label for="targetSumInput">Ingresar la suma:</label>
+        <input type="number" class="form-control" id="targetSumInput" (keyup.enter)="findPairs()" [(ngModel)]="targetSum" />
+        <button class="btn btn-outline-primary mt-2" (click)="findPairs()">Buscar Pares</button>
+      </div>
+      <div *ngFor="let pair of pairs">
+        <span class="badge text-bg-success fs-5 p-2 mt-4">{{ pair[0] + ' + ' + pair[1] + ' = ' + (pair[0] + pair[1])}}</span>
+      </div>
+    </div>
+  </div>
+</div>
