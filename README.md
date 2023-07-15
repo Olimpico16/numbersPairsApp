@@ -12,4 +12,4 @@ Asegúrate de tener instalado lo siguiente antes de comenzar con la inicializaci
 Sigue los pasos a continuación para inicializar el proyecto de Angular:
 
 1. **Instalar dependencias**
-  ```npm install
+  ``npm install``
